@@ -1,2 +1,67 @@
-// Các trang thành phần
-@import _pages/index
+$tim: #87509c //Tím 
+$ngoc: #17c2a4 // Cyan
+$vang: #ffdd99 // Vang 
+$do: #d74680 // Đỏ 
+$xanh: #3c5499 // Xanh 
+$cam: #EB7D4B // Cam
+
+// Đây là phần Sliders
+.Home_Sliders
+    background: $tim
+    min-height: 600px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    h1
+        color: #ffffff
+        font-size: 2.5rem
+        letter-spacing: 1px
+    .btn-more
+        background: $cam
+        color: #ffffff
+        text-transform: uppercase
+        font-weight: bolder
+        padding: 20px 35px
+        margin-top: 40px 
+// Đây là phần Services
+.Home_Services
+    background: $ngoc
+    min-height: 600px
+    // display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    h2
+        color: #ffffff
+        text-transform: uppercase
+        position: relative
+        font-size: 3rem
+        padding-bottom: 30px
+        padding-top: 20px
+        letter-spacing: 2px
+        &:before
+            content: ''
+            display: block
+            background: gray             
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            width: 80px
+            height: 5px
+            bottom: 8px
+
+    p.slogun
+        color: #ffffff
+        font-size: 1.3rem
+        padding-bottom: 20px
+    .figure img
+        padding-bottom: 50px
+        padding-top: 20px
+    h3 
+        color: #ffffff
+        padding-bottom: 20px
+    p.branding
+        color: #ffffff
+   
+        
