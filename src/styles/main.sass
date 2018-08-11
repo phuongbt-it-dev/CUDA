@@ -40,17 +40,24 @@ $cam: #EB7D4B // Cam
         padding-bottom: 30px
         padding-top: 20px
         letter-spacing: 2px
-        &:before
+        &:before,
+        &:after
             content: ''
             display: block
-            background: gray             
+            background: #485351             
             position: absolute
             left: 50%
             transform: translateX(-50%)
+        &:before
             width: 80px
             height: 5px
             bottom: 8px
+        &:after
+            width: 20px
+            height: 10px
+            bottom: 6px
 
+            
     p.slogun
         color: #ffffff
         font-size: 1.3rem
@@ -64,4 +71,69 @@ $cam: #EB7D4B // Cam
     p.branding
         color: #ffffff
    
-        
+.Home_Teamwork
+    background: #E7F1F8
+    min-height: 750px
+    // display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    h2
+        color: #000000
+        text-transform: uppercase
+        position: relative
+        font-size: 3rem
+        padding-bottom: 30px
+        padding-top: 20px
+        letter-spacing: 2px
+        &:before,
+        &:after
+            content: ''
+            display: block
+            background: #485351            
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+        &:before
+            width: 80px
+            height: 5px
+            bottom: 8px
+        &:after
+            width: 20px
+            height: 10px
+            bottom: 6px
+    p.slogun
+        color: #000000
+        font-size: 1.3rem
+        padding-top: 20px
+        padding-bottom: 40px
+    img
+        border-radius: 50%
+    p.product
+        min-height: 100px
+        font-size: 1.2rem
+    i
+        display: inline-block
+        color: white
+        border-radius: 50%
+        background-color: lightgrey
+        height: 35px
+        width: 35px
+        line-height: 30px
+        margin: auto 5px
+        font-size: 15px
+        text-align: center
+.Home_Skills
+    .pink
+        .bar
+            border-color: #d74680
+        .fill
+            border-color: #d74680
+    .cyan
+        .bar
+            border-color: #15c7a8
+        .fill
+            border-color: #15c7a8
+
+      
+   
