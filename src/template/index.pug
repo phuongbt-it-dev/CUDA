@@ -47,51 +47,52 @@ block main
 				.col-sm-6.col-md-3
 					figure.figure
 						img(src="./img/home_mem_1.png", alt="member")
-					h3 anne hataway
+					h3.name anne hataway
 					p.sector
 						a(href="#") CEO / Marketing Guru
 					p.product Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
 					a.detail(href="#")
-						i.fab.fa-facebook-square
-						i.fab.fa-twitter-square
-						i.fab.fa-linkedin
-						i.fas.fa-envelope
+						i.fa.fa-facebook
+						i.fa.fa-twitter
+						i.fa.fa-linkedin
+						i.fa.fa-envelope
 				.col-sm-6.col-md-3
 					figure.figure
 						img(src="./img/home_mem_1.png", alt="member")
-					h3 kate upton
+					h3.name kate upton
 					p.sector
 						a(href="#") Creative Director
 					p.product Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.
 					a.detail(href="#")
-						i.fab.fa-facebook-square
-						i.fab.fa-twitter-square
-						i.fab.fa-linkedin
-						i.fas.fa-envelope
+						i.fa.fa-facebook
+						i.fa.fa-twitter
+						i.fa.fa-linkedin
+						i.fa.fa-envelope
 				.col-sm-6.col-md-3
 					figure.figure
 						img(src="./img/home_mem_1.png", alt="member")
-					h3 olivia wilde
+					h3.name olivia wilde
 					p.sector
 						a(href="#") Lead Designer
 					p.product Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.
 					a.detail(href="#")
-						i.fab.fa-facebook-square
-						i.fab.fa-twitter-square
-						i.fab.fa-linkedin
-						i.fas.fa-envelope
+						i.fa.fa-facebook
+						i.fa.fa-twitter
+						i.fa.fa-linkedin
+						i.fa.fa-envelope
 				.col-sm-6.col-md-3
 					figure.figure
 						img(src="./img/home_mem_1.png", alt="member")
-					h3 ashley greene
+					h3.name ashley greene
 					p.sector
 						a(href="#") SEO / Developer
 					p.product Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
 					a.detail(href="#")
-						i.fab.fa-facebook-square
-						i.fab.fa-twitter-square
-						i.fab.fa-linkedin
-						i.fas.fa-envelope
+						i.fa.fa-facebook
+						i.fa.fa-twitter
+						i.fa.fa-linkedin
+						i.fa.fa-envelope
+	//- Đây là phần Skills
 	section.Home_Skills
 		.container
 			.row
@@ -99,34 +100,35 @@ block main
 					h2 we got skills!
 					p.slogun Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			.row.mt-5
-				.col-sm-6.col-md-3.skill_item
+				.col-md-3.skill_item
 					.c100.p90.big.blue
 						span 90%
 						.slice
 							.bar
 							.fill
 					p web design
-				.col-sm-6.col-md-3.skill_item
+				.col-md-3.skill_item
 					.c100.p75.big.pink
 						span 75%
 						.slice
 							.bar
 							.fill
 					p html / css
-				.col-sm-6.col-md-3.skill_item
+				.col-md-3.skill_item
 					.c100.p70.big.cyan
 						span 70%
 						.slice
 							.bar
 							.fill
 					p graphic design
-				.col-sm-6.col-md-3.skill_item
+				.col-md-3.skill_item
 					.c100.p85.big.orange
 						span 85%
 						.slice
 							.bar
 							.fill
 					p ui / ux
+	//- Đây là phần Portfolio
 	section.Home_Portfolio
 		.container
 			.row
@@ -163,7 +165,7 @@ block main
 				.col.mt-5
 					p
 						a.btn.btn-light(href="#") load more projects
-					
+	//- Đây là phần AboutUs
 	section.Home_AboutUs
 		.container
 			.row
@@ -214,18 +216,27 @@ block main
 				.col
 					h2 GET IN TOUCH
 					p.slogun 1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
-			.row
-				.col-md-6
-					form.form-group
-						input(type="text" placeholder="Your Name*")
-				.col-md-6
-					form.form-group
-						input(type="text" placeholder="Last Name*")
-				.col-md-12
-					form.form-group
-						input(type="text" placeholder="Your Message*")
+			.row.mt-5
+				.col-lg-2
+				.col-lg-8.col-md-12
+					.form-row
+						.form-group.col-6
+							input.form-control(type="text" placeholder="Your Name*")
+						.form-group.col-6
+							input.form-control(type="text" placeholder="Your Email*")
+						.form-group.col-12
+							textarea.form-control.comment(placeholder="Your Message*", cols="30", rows="10")
+				//- .col-md-4
+				//- 	form.form-group
+				//- 		input.form-control(type="text" placeholder="Your Name*")
+				//- .col-md-4
+				//- 	form.form-group
+				//- 		input.form-control(type="text" placeholder="Last Name*")
+				//- .col-md-8
+				//- 	form.form-group
+				//- 		textarea.form-control(type="text" placeholder="Your Message*", col="30", row="20")
 			p
-				a.btn.btn-dark(href="#") SEND MESSAGE
+				a.btn.btn-send(href="#") SEND MESSAGE
 
 			
 				
